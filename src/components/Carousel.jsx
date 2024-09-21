@@ -67,7 +67,7 @@ const Carousel = () => {
             <div className="bg-white shadow-md rounded-lg overflow-hidden flex h-full min-h-60">
               <img
                 src={project.image}
-                alt={project.title}
+                alt={project.restaurant}
                 className="w-1/4 h-auto object-cover"
               />
               <div className="p-4 w-3/4 flex flex-col justify-between">
