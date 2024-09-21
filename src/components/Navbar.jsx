@@ -42,10 +42,10 @@ const Navbar = () => {
         className="md:hidden overflow-hidden bg-white shadow-md"
       >
         <ul className="flex flex-col space-y-4 py-4 text-center text-gray-800 font-semibold">
-          <li><a href="#accueil" className="hover:text-blue-600 transition">Accueil</a></li>
-          <li><a href="#nos-offres" className="hover:text-blue-600 transition">Nos offres</a></li>
-          <li><a href="#nos-solutions" className="hover:text-blue-600 transition">Nos solutions</a></li>
-          <li><a href="#espace-restaurant" className="hover:text-blue-600 transition">Espace restaurant</a></li>
+          <li><a href="#accueil" className="hover:text-secondary transition">Accueil</a></li>
+          <li><a href="#nos-offres" className="hover:text-secondary transition">Nos offres</a></li>
+          <li><a href="#nos-solutions" className="hover:text-secondary transition">Nos solutions</a></li>
+          <li><a href="#espace-restaurant" className="hover:text-secondary transition">Espace restaurant</a></li>
         </ul>
       </motion.div>
     </nav>
