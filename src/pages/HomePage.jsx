@@ -39,7 +39,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="md:w-1/2 flex items-center justify-center">
-          <img src="src/assets/img/plats_mobile.png" alt="Plats" className="w-full h-auto md:w-auto" />
+          <img src="assets/img/plats_mobile.png" alt="Plats" className="w-full h-auto md:w-auto" />
         </div>
       </div>
     </div>
