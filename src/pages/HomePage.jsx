@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Button from '../components/Button';
 import AnimatedLetters from '../components/AnimatedLetters'; // Importez le nouveau composant
 import { motion } from 'framer-motion';
+import Carousel from '../components/Carousel';
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -10,6 +11,7 @@ const HomePage = () => {
   const handleButtonClick = () => {
     navigate('/contact');
   };
+
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100 p-4 md:p-16">
@@ -63,6 +65,10 @@ const HomePage = () => {
           <img src="assets/img/plats_mobile.png" alt="Plats" className="w-full h-auto md:w-3/4" />
           
         </div>
+      </div>
+      <div className="w-full mt-12 h-full">
+        <h1 className="text-4xl font-bold text-center mb-8">Leurs <AnimatedLetters text="témoignages" /></h1>
+        <Carousel />
       </div>
     </div>
   );
