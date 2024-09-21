@@ -34,16 +34,16 @@ const Footer = () => {
             Suivez-nous
           </h3>
           <div className="flex space-x-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-tertiary hover:text-secondary transition">
+            <a href="https://www.facebook.com/foodcollect.fr/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-tertiary hover:text-secondary transition">
               <FaFacebook size={36} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-tertiary hover:text-secondary transition">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-tertiary hover:text-secondary transition">
               <FaTwitter size={36} />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-tertiary hover:text-secondary transition">
+            <a href="https://www.instagram.com/foodcollect_fr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-tertiary hover:text-secondary transition">
               <FaInstagram size={36} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-tertiary hover:text-secondary transition">
+            <a href="https://www.linkedin.com/company/foodcollect/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-tertiary hover:text-secondary transition">
               <FaLinkedin size={36} />
             </a>
           </div>
