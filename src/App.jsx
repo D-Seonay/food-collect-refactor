@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import ScrollToTopButton from './components/ScrollToTopButton';
 import Home from './pages/HomePage'; // Assurez-vous que le chemin est correct
 import Offers from './pages/OffersPage'; // Créez également ces pages si elles n'existent pas
 import Solutions from './pages/SolutionsPage';
@@ -23,6 +25,8 @@ function App() {
           <Route path="*" element={<Error404 />} />
         </Routes>
       </div>
+      <Footer />
+      <ScrollToTopButton />
     </Router>
   );
 }
