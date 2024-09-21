@@ -14,7 +14,7 @@ const HomePage = () => {
 
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100 p-4 md:p-16">
+    <div className="flex flex-col items-center justify-center h-full bg-gray-100 p-4 md:p-16">
       <div className="flex flex-col md:flex-row w-full h-full">
         <div className="md:w-1/2 flex items-center justify-center md:justify-start">
           <div className="flex flex-col items-center md:items-start space-y-4">
@@ -66,7 +66,7 @@ const HomePage = () => {
           
         </div>
       </div>
-      <div className="w-full mt-12 h-full">
+      <div className="w-full mt-20 h-full container mx-auto contents-center">
         <h1 className="text-4xl font-bold text-center mb-8">Leurs <AnimatedLetters text="témoignages" /></h1>
         <Carousel />
       </div>

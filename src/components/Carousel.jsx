@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 
 // Exemple de données pour les projets
 const projects = [
@@ -39,9 +39,9 @@ const projects = [
 
 const Carousel = () => {
   return (
-    <div className="container mx-auto pb-32 px-4">
+    <div className="container mx-auto px-4">
       <Swiper
-        slidesPerView={3} // Affiche 3 cartes par défaut
+        slidesPerView={1} // Affiche 3 cartes par défaut
         spaceBetween={30} // Espace entre les cartes
         autoplay={{
           delay: 2500, // Temps avant le défilement automatique
@@ -64,22 +64,22 @@ const Carousel = () => {
       >
         {projects.map((project) => (
           <SwiperSlide key={project.id}>
-          <div className="bg-white shadow-md rounded-lg overflow-hidden flex h-full min-h-60">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-1/4 h-100 object-cover"
-            />
-            <div className="p-4 w-3/4 flex flex-col justify-between">
-              <p className="text-gray-700 mt-2">{project.description}</p>
-              <div className="flex items-center">
-              <p className="text-gray-800 text-sm mt-2 text-bottom font-bold">{project.author}</p>
-              <p className="text-gray-500 text-sm mt-2 mx-2 text-bottom">  |  </p>
-              <p className="text-gray-500 text-sm mt-2 text-bottom">{project.restaurant}</p>
+            <div className="bg-white shadow-md rounded-lg overflow-hidden flex h-full min-h-60">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-1/4 h-auto object-cover"
+              />
+              <div className="p-4 w-3/4 flex flex-col justify-between">
+                <p className="text-gray-700 mt-2">{project.description}</p>
+                <div className="flex items-center">
+                  <p className="text-gray-800 text-sm font-bold">{project.author}</p>
+                  <p className="text-gray-500 text-sm mx-2">|</p>
+                  <p className="text-gray-500 text-sm">{project.restaurant}</p>
+                </div>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
         ))}
       </Swiper>
     </div>
