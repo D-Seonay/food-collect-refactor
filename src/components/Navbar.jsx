@@ -15,8 +15,8 @@ const Navbar = () => {
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-800">
           <a href="/">
-            <img src="src/assets/logo.svg" alt="Logo" className="h-10 inline-block" />
-            </a>
+          <img src="/assets/logo.svg" alt="Logo" className="w-24" />
+          </a>
         </div>
 
         {/* Menu Desktop */}
