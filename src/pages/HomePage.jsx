@@ -4,6 +4,7 @@ import Button from '../components/Button';
 import AnimatedLetters from '../components/AnimatedLetters'; // Importez le nouveau composant
 import { motion } from 'framer-motion';
 import Carousel from '../components/Carousel';
+import Solution from '../components/Solutions';
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -66,6 +67,9 @@ const HomePage = () => {
           
         </div>
       </div>
+
+      <Solution />
+
       <div className="w-full mt-20 h-full container mx-auto contents-center">
         <h1 className="text-4xl font-bold text-center mb-8">Leurs <AnimatedLetters text="témoignages" /></h1>
         <Carousel />
