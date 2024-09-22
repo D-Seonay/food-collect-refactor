@@ -31,7 +31,7 @@ const ScrollToTopButton = () => {
 
   return (
     <motion.div
-      className={`fixed bottom-5 right-5 z-50 cursor-pointer p-4 bg-primary text-white rounded-full shadow-lg ${
+      className={`fixed bottom-5 right-5 z-50 cursor-pointer p-4 bg-primary text-white rounded-full shadow-lg hover:bg-primary-hover transition ${
         isVisible ? 'block' : 'hidden'
       }`}
       onClick={scrollToTop}
