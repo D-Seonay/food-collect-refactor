@@ -5,6 +5,7 @@ import AnimatedLetters from '../components/AnimatedLetters'; // Importez le nouv
 import { motion } from 'framer-motion';
 import Carousel from '../components/Carousel';
 import Solution from '../components/Solutions';
+import Story from '../components/Story';
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -53,7 +54,7 @@ const HomePage = () => {
 
               </motion.p>
             <motion.div
-              className="flex space-x-4 h-full w-full justify-center md:justify-start"
+              className="flex space-x-4 h-full w-full justify-center md:justify-start py-4"
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.9 }}
@@ -74,7 +75,12 @@ const HomePage = () => {
         <h1 className="text-4xl font-bold text-center mb-8">Leurs <AnimatedLetters text="témoignages" /></h1>
         <Carousel />
       </div>
+
+    <div className="w-full mt-20 h-full container mx-auto contents-center bg-quaternary">
+      <Story />
     </div>
+  </div>
+
   );
 };
 
