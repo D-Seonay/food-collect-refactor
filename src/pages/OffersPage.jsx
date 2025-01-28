@@ -1,11 +1,12 @@
 import React from 'react';
 import AnimatedLetters from '../components/AnimatedLetters';
 import { motion } from 'framer-motion';
+import BannerOffers from '../components/BannerOffers';
 
 export default function OffersPage() {
   return (
-    <div className="flex flex-col items-center justify-center h-full bg-gray-100 p-4 md:p-16">
-      <div className="flex flex-col md:flex-row w-full h-full">
+    <div className="flex flex-col items-center justify-center h-full bg-gray-100">
+      <div className="flex flex-col md:flex-row w-full h-full p-4 md:p-16">
         {/* Section Texte */}
         <div className="md:w-1/2 flex flex-col justify-center md:pl-8">
           <motion.h1
@@ -59,6 +60,7 @@ export default function OffersPage() {
           />
         </motion.div>
       </div>
+      <BannerOffers />
       
     </div>
   );
