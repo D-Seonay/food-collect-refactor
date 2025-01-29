@@ -2,6 +2,8 @@ import React from 'react';
 import AnimatedLetters from '../components/AnimatedLetters';
 import { motion } from 'framer-motion';
 import BannerOffers from '../components/BannerOffers';
+import OfferTable from '../components/OfferTable';
+import CustomSolution from '../components/CustomSolution';
 
 export default function OffersPage() {
   return (
@@ -61,6 +63,8 @@ export default function OffersPage() {
         </motion.div>
       </div>
       <BannerOffers />
+      <OfferTable />
+      <CustomSolution />
       
     </div>
   );
