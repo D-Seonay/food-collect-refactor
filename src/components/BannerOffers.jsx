@@ -48,6 +48,7 @@ return (
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
+            whileHover={{ scale: 1.05 }}
         >
             <MdWebAsset size={48} className="text-tertiary bg-secondary-low rounded-lg p-3" />
             <h2 className="text-1xl md:text-2xl font-bold text-gray-800 text-center">
